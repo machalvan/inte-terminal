@@ -1,2 +1,2 @@
 # inte-terminal
-A cook terminal
+A cooking terminal
