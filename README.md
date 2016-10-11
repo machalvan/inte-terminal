@@ -1,2 +1,2 @@
 # inte-terminal
-A cool terminal
+A cooking terminal
