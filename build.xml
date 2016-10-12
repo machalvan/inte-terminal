@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
-	<project name="Hello World Project" default="javacode">
+	<project name="javacode" default="javacode">
 	
 	<target name="javacode">
 		<java classname="test1">
+			<classpath>
+				<pathelement location="."/>
+			</classpath>
 		</java>
 	</target>
 </project>
