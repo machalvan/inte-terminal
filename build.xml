@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-	<project name="Hejsan hoppsan" default="info">
+	<project name="Hello World Project" default="javacode">
 	
-	<target name="info">
-		<echo>Hejsan hoppsan fallera</echo>
+	<target name="javacode">
+		<java classname="test1">
+		</java>
 	</target>
-
 </project>
