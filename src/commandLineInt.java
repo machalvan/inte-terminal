@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class commandLineInt {
 	
 	private Scanner keyboard = new Scanner(System.in);
-	private fileSystemTest tempDir = new fileSystemTest();
+	private tempFileDir tempDir = new tempFileDir();
 	private showDir getDir = new showDir();
 	
 	public commandLineInt(){
@@ -45,14 +45,23 @@ public class commandLineInt {
 				nullcheck = false;
 			}
 		}
-		return command.toLowerCase();
+		return command;
 	}
 	
 	private void handleCommand(String command){
 		switch (command){
+		
+			case "exit":
+				exit();
+				break;
+				
 			default:
 				break;
 		}
+	}
+	
+	public void exit(){
+		System.exit(0);
 	}
 	
 	public void run(){
