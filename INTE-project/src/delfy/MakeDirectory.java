@@ -27,7 +27,7 @@ public class MakeDirectory {
 		}
 		//skriv ut till användaren 
 	}
-
+	
 	public String setUserInput(String s){
 		this.userInputString = s; 
 		return userInputString;
