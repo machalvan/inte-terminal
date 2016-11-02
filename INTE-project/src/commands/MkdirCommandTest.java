@@ -1,22 +1,27 @@
-package delfy;
+package commands;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.io.File;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MakeDirectoryTest {
-	MakeDirectory myMake;
+public class MkdirCommandTest {
+	MkdirCommand myMake;
 	private String validString = "OK";
 	private String invalidString = null; 
 	private String invalidCharacterString = "~#=,?!";
-	private File filename = new File("Mapp1");
+	public File filename = null;
 	
 	@Before 
 	public void initialize(){
-		myMake = new MakeDirectory(validString);
+		//myMake = new MkdirCommand(filename, validString);
+		myMake = new MkdirCommand(validString);
+		filename = new File ("Mapp1");
+		filename.deleteOnExit();
+		filename.mkdir();
 	}
 
 	@Test
@@ -57,8 +62,23 @@ public class MakeDirectoryTest {
 		assertEquals(true, myBool);
 	}
 	
+	@Test
+	public void testIllegalDirectory(){
+		MkdirCommand aMake = new MkdirCommand(null);
+		assertEquals(false, aMake);
+	}
+	
 	@Test 
 	public void testDirectoryAlreadyExists(){
 		assertEquals(true, myMake.directoryAlreadyExists(filename));
 	}
+	
+	
+	
+	/*@Test(expected = SecurityException.class)
+	public void testInvalidDirectory(){
+		//File testFile = new File ("Deny/Mapp");
+		myMake.createNewDirectory("Deny/Mapp");
+	}*/
+
 }

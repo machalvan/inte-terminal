@@ -34,6 +34,9 @@ public class Command {
 			return new CdCommand(workingDir, data);
 		case "rmdir": 
 			return new RmdirCommand(workingDir, data);
+		case "mkdir":
+			return new MkdirCommand(workingDir, data);
+			//TODO här finns stuff att göra 
 		
 		default :
 			System.out.println("Not a valid command");

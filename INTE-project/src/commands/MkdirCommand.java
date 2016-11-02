@@ -1,6 +1,6 @@
 
-package delfy;
-
+package commands;
+//TODO gör om enligt Solos modell
 
 
 import java.io.File;
@@ -15,17 +15,20 @@ import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MakeDirectory {
+public class MkdirCommand{ //extends command
 	private String userInputString = "before input";
 	private File directory; 
 	
 	//konstruktor 
-	public MakeDirectory(String s){
+	public MkdirCommand(String s){
+		//super(workingDir);
 		setUserInput(s);
 		if(checkUserInput(s)){
 			createNewDirectory(userInputString);
 		}
-		//skriv ut till användaren 
+		else {
+			System.out.println("Bad string");
+		}
 	}
 
 	public String setUserInput(String s){
@@ -57,14 +60,9 @@ public class MakeDirectory {
 	public boolean createNewDirectory(String filename){
 		File dir = new File(filename);
 		this.directory = dir; 
+		return dir.mkdir();
 		
-		if(directoryAlreadyExists(directory)){
-			return false; 
-		}
-		else{
-			directory.mkdir();
-			return directory.isDirectory();
-		}
+		//return directory.isDirectory();
 	}
 	
 	public boolean directoryAlreadyExists(File filename){
