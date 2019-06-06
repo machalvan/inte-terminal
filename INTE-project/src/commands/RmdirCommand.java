@@ -9,18 +9,15 @@ public class RmdirCommand extends Command {
 	public RmdirCommand(File workingDir, String data) {
 		super(workingDir);
 		this.data = data;
-		
 	}
 	
 	public File execute() {
-		
 		File dirToBeRemoved = addStringToFilename(workingDir, data);
 		removeDirectory(dirToBeRemoved);
 		return workingDir;
 	}
 	
 	public static Boolean removeDirectory(File directory) {
-		
 		try {
 			if(directory.exists()) {
 				if(directory.isDirectory()) {

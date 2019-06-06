@@ -6,7 +6,7 @@ import java.io.File;
 public class Main {
 
 	public Main() {
-		
+		System.out.println("Inside main");
 	}
 	
 	public static void main(String[] args) {
@@ -15,17 +15,18 @@ public class Main {
 	}
 	
 	public void run() {
+		System.out.println("Inside run");
 		TestDirectory td = new TestDirectory();
 		td.createTempDir();
 		
 		File f = td.getFileLocation();
 		
-		//printDir(f); //print to System.out 
+		printDir(f); //print to System.out 
 		
 		f = cd(f, "folder1");
 		
 		System.out.println("\n \n");
-		//printDir(f);
+		printDir(f);
 	}
 	
 	/*
@@ -42,10 +43,10 @@ public class Main {
 	}
 	
 	//Mkdir
-	MakeDirectory mkdir = new MakeDirectory(String s);
+	////MakeDirectory mkdir = new MakeDirectory(String s);
 	
 	/*
-	 * Förlängningar av kommandon
+	 * Fï¿½rlï¿½ngningar av kommandon
 	 */
 	//Printdir
 	

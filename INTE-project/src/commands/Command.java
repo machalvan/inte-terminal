@@ -2,9 +2,7 @@ package commands;
 
 import java.io.File;
 
-
 public class Command {
-
 	File workingDir;
 	
 	public Command(File workingDir) {
@@ -12,22 +10,19 @@ public class Command {
 	}
 	
 	public static Command getCommand(File workingDir, String input) {
-		
-		//cmd & data
 		String cmd = "";
 		String data = "";
 		
-		if (input.indexOf(" ") == -1) {
+		if (!input.contains(" ")) {
 			cmd = input;
-		}
-		else {
+		} else {
 			cmd = input.substring(0, input.indexOf(" "));
-			data = input.substring(input.indexOf(" ")+1);
-			}
+			data = input.substring(input.indexOf(" ") + 1);
+		}
 		
 		switch (cmd) {
 		case "exit":
-			return new exitCommand(workingDir);
+			return new ExitCommand(workingDir);
 		case "ls":
 			return new LsCommand(workingDir);
 		case "cd":
@@ -50,5 +45,4 @@ public class Command {
 	public File execute() {
 		return workingDir;
 	}
-
 }

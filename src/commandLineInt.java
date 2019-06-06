@@ -37,7 +37,7 @@ public class commandLineInt {
 		boolean nullcheck = true;
 		String command = null;
 		while(nullcheck){
-			System.out.print(getCurrentDir()+">");
+			System.out.print(getCurrentDir()+">>");
 			command = keyboard.nextLine();
 			if(command == null || command.isEmpty()){
 			}

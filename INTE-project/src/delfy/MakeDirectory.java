@@ -1,11 +1,8 @@
-
 package delfy;
-
-
 
 import java.io.File;
 
-//Ta in namnval fr användare 
+//Ta in namnval från användare
 //Kontrollera namnval - check 
 //Metod som tittar om mappen redan finns - check
 //
@@ -18,10 +15,10 @@ import java.util.regex.Pattern;
 public class MakeDirectory {
 	private String userInputString = "before input";
 	private File directory; 
-	
-	//konstruktor 
+
 	public MakeDirectory(String s){
 		setUserInput(s);
+
 		if(checkUserInput(s)){
 			createNewDirectory(userInputString);
 		}
@@ -38,14 +35,10 @@ public class MakeDirectory {
 	}
 	
 	public boolean checkUserInput(String s){
-		if(s == null){
+		if (s == null){
 			return false; //bad string
-		}
-		else if(containsIllegals(s)){
-			return false;
-		}
-		else{
-			return true;
+		} else {
+			return !containsIllegals(s);
 		}
 	}
 
@@ -55,13 +48,11 @@ public class MakeDirectory {
 	}
 	
 	public boolean createNewDirectory(String filename){
-		File dir = new File(filename);
-		this.directory = dir; 
+		this.directory = new File(filename);
 		
-		if(directoryAlreadyExists(directory)){
+		if (directoryAlreadyExists(directory)) {
 			return false; 
-		}
-		else{
+		} else {
 			directory.mkdir();
 			return directory.isDirectory();
 		}

@@ -2,9 +2,9 @@ package commands;
 
 import java.io.File;
 
-public class exitCommand extends Command {
+public class ExitCommand extends Command {
 
-	public exitCommand(File workingDir) {
+	public ExitCommand(File workingDir) {
 		super(workingDir);
 	}
 	public File execute() {
