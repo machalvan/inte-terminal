@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry excluding="INTE-project/src/|src/|testFileClass/src/" kind="src" path=""/>
-	<classpathentry kind="src" path="INTE-project/src"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="testFileClass/src"/>
 	<classpathentry kind="output" path="bin"/>

@@ -2,25 +2,222 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="115fb8af-49a6-42bf-bb1e-e68de06de58f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/INTE-project/src/commands/CdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/INTE-project/src/commands/CdCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INTE-project/src/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/INTE-project/src/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INTE-project/src/commands/LsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/INTE-project/src/commands/LsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INTE-project/src/commands/RmdirCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/INTE-project/src/commands/RmdirCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INTE-project/src/commands/exitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/INTE-project/src/commands/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/INTE-project/src/delfy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/MakeDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/INTE-project/src/delfy/MakeDirectory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/commandLineInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/INTE-project/src/delfy/commandLineInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/showPreviousCommandsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/INTE-project/src/delfy/showPreviousCommandsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inte-terminal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inte-terminal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.mylyn/repositories.xml.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.indexes/properties.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/org.eclipse.egit.core/GitProjectData.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.j2ee.webservice.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_0.fdt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_0.fdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_0.fnm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_0.frq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_0.nrm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_0.tii" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_0.tis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/segments.gen" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/segments_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_0.fdt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_0.fdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_0.tis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.fdt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.fdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.fnm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.frq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.nrm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.prx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.tii" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_1.tis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/segments.gen" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/segments_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/server-config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.6.2.20150902-0002.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.rse.core/.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.rse.core/initializerMarks/org.eclipse.rse.internal.core.RSELocalConnectionInitializer.mark" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.laptop-unrvavo1_32510/FP.local.files_0/node.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.laptop-unrvavo1_32510/H.local_16/node.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.laptop-unrvavo1_32510/node.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.rse.ui/.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.metadata/version.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/RemoteSystemsTempFiles/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/commands/CdCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/commands/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/commands/ExitCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/commands/LsCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/commands/RmdirCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/MakeDirectory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/MakeDirectoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/TestDirectory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/commandLineInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/showDir.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/showPreviousCommands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/showPreviousCommandsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/src/delfy/tempFileDir.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/tempTest/folder1/folder2/testFile14831581854803075383.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/tempTest/folder1/testFile110583097656532877106.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/tempTest/folder1/testFile211968873734089263253.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/tempTest/folder3/testFile16386296378602017563.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/tempTest/folder3/testFile27948352197943398463.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/tempTest/folder3/testFile31771581394161980473.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/tempTest/testFile19030335822003218547.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/tempTest/testFile211537588696202337869.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INTE-project/tempTest/testFile38066246667726527949.test" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commandLineInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commandLineInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFileClass/src/TestDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFileClass/src/TestDirectory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/commandLineInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/fileSystemTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/showDir.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jar/commandLineInt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/jar/commandLineInt.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commandLineInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commandLineIntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileSystemTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/showDir.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/showDirTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/folder2/testFile110806307422240877692.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/folder2/testFile111209454390553741687.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/folder2/testFile113577804519871421962.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/folder2/testFile114817052175260907804.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/folder2/testFile15382205239295923078.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/folder2/testFile19229704865592298605.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/testFile110080302730965176216.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/testFile14836033663851382668.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/testFile15368821760573926628.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/testFile17410972763532048968.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/testFile18592617690679879899.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/testFile212265239545304910468.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/testFile23523377708471741548.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/testFile24217251831928546801.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/testFile28102513365324060840.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder1/testFile28239737496532758975.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile11016278062993844634.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile110565245183025086535.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile111000807067126594367.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile111242708137407721626.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile111456964151661523539.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile111665055619017748495.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile115351299293443891281.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile115436853468666261735.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile11667669103668973756.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile118195925924033296784.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile12452783061174591539.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile14451315629944395319.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile14813123165104458028.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile15109742046355393320.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile15892110355439844743.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile16100869832373902477.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile17103198460957842422.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile17320625979377563141.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile17405667451663144287.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile18109459324410047985.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile18353881969597065794.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile18542663845445934767.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile19098921207990999880.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile210392433135236216718.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile212001207301841287294.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile212960809349144469802.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile214595697247824060555.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile21667766706518078849.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile216825200354206989806.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile217313202172768917186.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile217822404063444775150.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile22346985530526575312.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile22662322921244693664.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile24739783054818511760.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile25253142025306459198.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile25407563269580820462.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile26766728781224411528.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile27217428098909395218.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile27355162333768818415.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile27481325273635007254.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile28109631022083795291.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile2867439955454150604.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile29372787121916715465.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile29873064957287415050.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile310579759533293502008.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile311668947604454060855.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile3133737980881499678.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile314332737908747894145.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile314365663361645536442.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile314861099638522994222.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile315435112580509870935.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile315663123027909704059.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile315723351750900495688.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile316249178335681609109.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile317125906119909453632.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile31749467990407382947.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile32334818781802996860.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile33567950620805581804.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile33697418254824385158.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile34557125299982998494.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile35129451659056399736.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile35380011473154150471.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile3640919143561761139.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile38167470778486393384.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile38811146916359857479.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile39156922510052828173.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/folder3/testFile39689129935839307138.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile110550514979318355428.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile112319056620021482498.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile116266228147806630582.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile13660967778237270373.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile19047667904980104171.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile19422406970730230898.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile214834604735247477633.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile214888066230946736322.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile215054255919387664044.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile21508497871016013850.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile29733048279455287138.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile31007379519967913110.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile311097610185622984869.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile32018719009046648768.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile34191634706397119075.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempTest/testFile38949503314530130982.test" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ElmWorkspace">
+    <elmProjects />
+    <settings elmCompilerPath="" elmFormatPath="" elmTestPath="" isElmFormatOnSaveEnabled="false" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="971115464">
@@ -70,119 +267,68 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1130294612">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="1" />
+          <entry key="java" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-              <folding>
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#694#695#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/INTE-project/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43809">
-              <caret line="2577" column="93" selection-start-line="2577" selection-start-column="93" selection-end-line="2577" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="29" />
+            <state relative-caret-position="900">
+              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/Command.java">
+        <entry file="file://$PROJECT_DIR$/src/delfy/commandLineInt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="100">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/RmdirCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/delfy/MakeDirectory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+            <state relative-caret-position="100">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/MakeDirectory.java">
+        <entry file="file://$PROJECT_DIR$/src/delfy/MakeDirectoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/MakeDirectoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-              <folding>
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="50">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/showPreviousCommandsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/ExitCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-              <folding>
-                <element signature="e#122#123#0" expanded="true" />
-                <element signature="e#146#147#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/LsCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-              <folding>
-                <element signature="e#119#120#0" expanded="true" />
-                <element signature="e#143#144#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -234,19 +380,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="y" value="34" />
+    <option name="width" value="1920" />
+    <option name="height" value="2126" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,69 +397,35 @@
               <item name="inte-terminal" type="b2602c69:ProjectViewProjectNode" />
               <item name="inte-terminal" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="inte-terminal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inte-terminal" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inte-terminal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inte-terminal" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inte-terminal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inte-terminal" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inte-terminal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inte-terminal" type="462c0819:PsiDirectoryNode" />
-              <item name="INTE-project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inte-terminal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inte-terminal" type="462c0819:PsiDirectoryNode" />
-              <item name="INTE-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inte-terminal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inte-terminal" type="462c0819:PsiDirectoryNode" />
-              <item name="INTE-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="delfy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inte-terminal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inte-terminal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inte-terminal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inte-terminal" type="462c0819:PsiDirectoryNode" />
-              <item name="testFileClass" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SearchEverywhereHistoryKey" value="bui&#9;FILE&#9;file://C:/Users/Marcus/Documents/Code/inte-terminal/build.xml&#10;buil&#9;FILE&#9;file://C:/Users/Marcus/Documents/Code/inte-terminal/build.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559803963619" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/INTE-project" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559918088522" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../AAAH-SNAYKUU" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.16992188" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.ActionScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -330,7 +439,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.commandLineInt (1)">
+  <component name="RunManager" selected="Application.commandLineInt">
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <module name="" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="0" />
+      <module name="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="delfy.Main" />
       <module name="inte-terminal" />
@@ -364,24 +491,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
-      <setting name="replType" value="NREPL" />
-      <setting name="execution" value="LEININGEN" />
-      <module name="" />
-      <setting name="jvmArgs" value="" />
-      <setting name="parameters" value="" />
-      <setting name="workingDir" value="" />
-      <setting name="profiles" value="" />
-      <setting name="aliases" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
-      <setting name="host" value="" />
-      <setting name="port" value="0" />
-      <setting name="replType" value="0" />
-      <module name="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.commandLineInt" />
       <item itemvalue="Application.Main" />
@@ -389,8 +498,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.commandLineInt (1)" />
         <item itemvalue="Application.commandLineInt" />
+        <item itemvalue="Application.commandLineInt (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -406,45 +515,48 @@
       <option name="presentableId" value="Default" />
       <updated>1559487580464</updated>
       <workItem from="1559487587873" duration="13033000" />
+      <workItem from="1559908325688" duration="1800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13033000" />
+    <option name="totallyTimeSpent" value="14833000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
+    <frame x="1920" y="34" width="1920" height="2126" extended-state="4" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25646552" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" weight="0.27896994" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32939914" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32939914" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32921812" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="REPL" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2788066" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32939914" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Elm" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="REPL" order="10" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,9 +566,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/INTE-project/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/INTE-project/.gitignore" />
     <entry file="file://$PROJECT_DIR$/FindLocation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -474,55 +584,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/.classpath">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/RemoteSystemsTempFiles/.project">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/.metadata/version.ini">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/.metadata/.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/bin/delfy/commandLineInt.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#1927#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/commandLineInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/INTE-project/.classpath">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/tempTest/testFile315766652227859785689.test">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/INTE-project/.project" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/.classpath" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/RemoteSystemsTempFiles/.project" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/.metadata/version.ini" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/.metadata/.log" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/bin/delfy/commandLineInt.class" />
+    <entry file="file://$PROJECT_DIR$/src/commandLineInt.java" />
+    <entry file="file://$PROJECT_DIR$/bin/INTE-project/.classpath" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/tempTest/testFile315766652227859785689.test" />
     <entry file="file://$PROJECT_DIR$/testFileClass/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -534,9 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="29" column="29" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -550,130 +617,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/showDir.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="811" column="19" selection-start-line="811" selection-start-column="19" selection-end-line="811" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/CdCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/commandLineInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/LsCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#119#120#0" expanded="true" />
-            <element signature="e#143#144#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/ExitCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#146#147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/RmdirCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/MakeDirectory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-          <folding>
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/INTE-project/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43809">
-          <caret line="2577" column="93" selection-start-line="2577" selection-start-column="93" selection-end-line="2577" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/showDir.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/io/File.java" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/CdCommand.java" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/commandLineInt.java" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/LsCommand.java" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/ExitCommand.java" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/Command.java" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/src/commands/RmdirCommand.java" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/MakeDirectory.java" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/Main.java" />
+    <entry file="file://$PROJECT_DIR$/bin/INTE-project/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/MakeDirectoryTest.java" />
+    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/showPreviousCommandsTest.java" />
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="29" />
+        <state relative-caret-position="900">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/MakeDirectoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/delfy/commandLineInt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding>
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/INTE-project/src/delfy/showPreviousCommandsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/delfy/MakeDirectory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/delfy/MakeDirectoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
