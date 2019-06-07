@@ -17,7 +17,6 @@ dependencies {
 }
 
 tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
+    options.encoding = 'Cp1252'
 }
-
-compileJava.options.encoding = 'UTF-8'
+apply plugin: 'java'
