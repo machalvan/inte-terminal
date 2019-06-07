@@ -5,7 +5,7 @@ This program is a simple terminal built as a part of a school group assignment f
 learning integration and unit testing. Also for learning some version control.
 
 ## How to run
-`java -Dfile.encoding=Cp1252 -classpath "INTE-project\bin" delfy.commandLineInt`
+`java -Dfile.encoding=windows-1252 -classpath INTE-project/production/inte-terminal commandLineInt`
 
 ## Commands
 | Command | Description |
