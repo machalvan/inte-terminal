@@ -1,14 +1,12 @@
 package delfy;
 
 import static org.junit.Assert.*;
-
 import java.io.File;
-
 import org.junit.Before;
 import org.junit.Test;
 
 public class MakeDirectoryTest {
-	MakeDirectory myMake;
+	private MakeDirectory myMake;
 	private String validString = "OK";
 	private String invalidString = null; 
 	private String invalidCharacterString = "~#=,?!";
@@ -17,12 +15,12 @@ public class MakeDirectoryTest {
 	@Before 
 	public void initialize(){
 		myMake = new MakeDirectory(validString);
+		filename.mkdir();
 	}
 
 	@Test
 	public void setInputTest(){
 		assertEquals(validString, myMake.setUserInput(validString));
-
 	}
 	
 	@Test
@@ -32,33 +30,32 @@ public class MakeDirectoryTest {
 	
 	@Test 
 	public void testCheckUserInput(){
-		//fail("Not yet implemented")
-		assertEquals(true, myMake.checkUserInput(validString));
+		assertTrue(myMake.checkUserInput(validString));
 	}
 	
 	@Test 
 	public void testInvalidInputCheckUserInput(){
-		assertEquals(false, myMake.checkUserInput(invalidString));
+		assertFalse(myMake.checkUserInput(invalidString));
 	}
 	
 	@Test
 	public void testIllegalCharacterInput(){
-		assertEquals(false, myMake.checkUserInput(invalidCharacterString));
+		assertFalse(myMake.checkUserInput(invalidCharacterString));
 	}
 	
 	@Test 
-	public void testcontainsIllegals(){
-		assertEquals(true , myMake.containsIllegals(invalidCharacterString));
+	public void testContainsIllegals(){
+		assertTrue(myMake.containsIllegals(invalidCharacterString));
 	}
 	
 	@Test 
 	public void testCreateDirectory(){
 		boolean myBool = myMake.createNewDirectory("Mapp2");
-		assertEquals(true, myBool);
+		assertTrue(myBool);
 	}
 	
 	@Test 
 	public void testDirectoryAlreadyExists(){
-		assertEquals(true, myMake.directoryAlreadyExists(filename));
+		assertTrue(myMake.directoryAlreadyExists(filename));
 	}
 }
