@@ -15,13 +15,13 @@ public class TestDirectory {
 	}
 
 	public void createTempDir() {
-		mainDir = new File(System.getProperty("user.dir")+"/tempTest");
+		mainDir = new File(System.getProperty("user.dir") + "/tempTest");
 
 		try {
 			createTempFile(3, mainDir);
-			createTempFile (2, new File(mainDir.getAbsolutePath()+"/folder1"));
-			createTempFile (1, new File(mainDir.getAbsolutePath()+"/folder1/folder2"));
-			createTempFile (3, new File(mainDir.getAbsolutePath()+"/folder3"));
+			createTempFile (2, new File(mainDir.getAbsolutePath() + "/folder1"));
+			createTempFile (1, new File(mainDir.getAbsolutePath() + "/folder1/folder2"));
+			createTempFile (3, new File(mainDir.getAbsolutePath() + "/folder3"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -32,9 +32,9 @@ public class TestDirectory {
 
 		try {
 			createTempFile(3, f);
-			createTempFile (2, new File(f.getAbsolutePath()+"/folder1"));
-			createTempFile (1, new File(f.getAbsolutePath()+"/folder1/folder2"));
-			createTempFile (3, new File(f.getAbsolutePath()+"/folder3"));
+			createTempFile (2, new File(f.getAbsolutePath() + "/folder1"));
+			createTempFile (1, new File(f.getAbsolutePath() + "/folder1/folder2"));
+			createTempFile (3, new File(f.getAbsolutePath() + "/folder3"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

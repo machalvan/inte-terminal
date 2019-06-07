@@ -2,60 +2,58 @@ package delfy;
 
 import static org.junit.Assert.*;
 import java.io.File;
+
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 public class MakeDirectoryTest {
-	private MakeDirectory myMake;
+	private MakeDirectory makeDirectory;
 	private String validString = "OK";
 	private String invalidString = null; 
 	private String invalidCharacterString = "~#=,?!";
-	private File filename = new File("Mapp1");
-	
+	private String testDirectoryPath = "src/test/resources/testDir/";
+	private File testDirectory = new File(testDirectoryPath);
+	private String newDirectoryName = "newDir";
+	private File newDirectory = new File(testDirectoryPath + newDirectoryName);
+
 	@Before 
 	public void initialize(){
-		myMake = new MakeDirectory(validString);
-		filename.mkdir();
+		makeDirectory = new MakeDirectory(testDirectoryPath);
 	}
 
-	@Test
-	public void setInputTest(){
-		assertEquals(validString, myMake.setUserInput(validString));
-	}
-	
-	@Test
-	public void getInputTest(){
-		assertEquals("before input", myMake.getUserInput());
+	@After
+	public void tearDown() {
+		newDirectory.delete();
 	}
 	
 	@Test 
 	public void testCheckUserInput(){
-		assertTrue(myMake.checkUserInput(validString));
+		assertTrue(makeDirectory.checkUserInput(validString));
 	}
 	
 	@Test 
 	public void testInvalidInputCheckUserInput(){
-		assertFalse(myMake.checkUserInput(invalidString));
+		assertFalse(makeDirectory.checkUserInput(invalidString));
 	}
 	
 	@Test
 	public void testIllegalCharacterInput(){
-		assertFalse(myMake.checkUserInput(invalidCharacterString));
+		assertFalse(makeDirectory.checkUserInput(invalidCharacterString));
 	}
 	
 	@Test 
 	public void testContainsIllegals(){
-		assertTrue(myMake.containsIllegals(invalidCharacterString));
+		assertTrue(makeDirectory.containsIllegals(invalidCharacterString));
 	}
 	
 	@Test 
 	public void testCreateDirectory(){
-		boolean myBool = myMake.createNewDirectory("Mapp2");
-		assertTrue(myBool);
+		assertTrue(makeDirectory.createNewDirectory(testDirectoryPath + newDirectoryName));
 	}
 	
 	@Test 
 	public void testDirectoryAlreadyExists(){
-		assertTrue(myMake.directoryAlreadyExists(filename));
+		assertTrue(makeDirectory.directoryAlreadyExists(testDirectory));
 	}
 }
