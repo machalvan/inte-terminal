@@ -22,13 +22,15 @@ public class Command {
 		
 		switch (cmd) {
 		case "exit":
-			return new ExitCommand(workingDir);
+			return new Exit(workingDir);
 		case "ls":
-			return new LsCommand(workingDir);
+			return new Ls(workingDir);
 		case "cd":
-			return new CdCommand(workingDir, data);
-		case "rmdir": 
-			return new RmdirCommand(workingDir, data);
+			return new Cd(workingDir, data);
+		case "mkdir":
+			return new Mkdir(workingDir, data);
+		case "rmdir":
+			return new Rmdir(workingDir, data);
 		
 		default :
 			System.out.println("Not a valid command");
@@ -39,7 +41,7 @@ public class Command {
 	
 	//Lägger till en sträng på slutet av en fil, duh.
 	protected File addStringToFilename(File file, String toBeAddedToFile) {
-		return new File(workingDir.getAbsolutePath()+"/"+toBeAddedToFile);
+		return new File(workingDir.getAbsolutePath() + "/" + toBeAddedToFile);
 	}
 	
 	public File execute() {

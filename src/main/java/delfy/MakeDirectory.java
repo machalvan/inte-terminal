@@ -44,5 +44,4 @@ public class MakeDirectory {
 	public boolean directoryAlreadyExists(File filename){
 		return filename.isDirectory();
 	}
-	
 }

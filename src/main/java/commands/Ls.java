@@ -2,8 +2,8 @@ package commands;
 
 import java.io.File;
 
-public class LsCommand extends Command {
-	public LsCommand(File workingDir) {
+public class Ls extends Command {
+	public Ls(File workingDir) {
 		super(workingDir);
 	}
 

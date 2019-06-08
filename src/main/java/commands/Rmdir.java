@@ -2,11 +2,10 @@ package commands;
 
 import java.io.File;
 
-public class RmdirCommand extends Command {
+public class Rmdir extends Command {
+	private String data;
 	
-	public String data;
-	
-	public RmdirCommand(File workingDir, String data) {
+	public Rmdir(File workingDir, String data) {
 		super(workingDir);
 		this.data = data;
 	}

@@ -39,11 +39,11 @@ public class Main {
 	}
 	//CD-kommando
 	File cd (File currDir, String jump) {
-		return new File(currDir.getAbsolutePath()+"/"+jump);
+		return new File(currDir.getAbsolutePath() + "/" + jump);
 	}
 	
 	//Mkdir
-	////MakeDirectory mkdir = new MakeDirectory(String s);
+	MakeDirectory mkdir = new MakeDirectory("aTest");
 	
 	/*
 	 * F�rl�ngningar av kommandon
