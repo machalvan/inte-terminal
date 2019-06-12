@@ -8,21 +8,21 @@ import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 
 //Metod som skapar en textfil 
-//N‰r programmet startas 
-//Metod som tar in val frÂn anv‰ndaren
-//÷ppnar fil
-//Skriver str‰ng till fil 
-//St‰nger fil
-//sÂ fort som den sparat ett nytt kommando, be den gˆra newline 
+//N√§r programmet startas 
+//Metod som tar in val fr√•n anv√§ndaren
+//√ñppnar fil
+//Skriver str√§ng till fil 
+//St√§nger fil
+//s√• fort som den sparat ett nytt kommando, be den g√∂ra newline 
 
 public class showPreviousCommands {
 	public showPreviousCommands(){
 		
 	}
 	
-	//N‰r programmet ˆppnas ska en textfil 
-	//spara flagga om vilken rad du ‰r pÂ. spara informationen. 
-	//st‰ng textfilen. 
+	//N√§r programmet √∂ppnas ska en textfil 
+	//spara flagga om vilken rad du √§r p√•. spara informationen. 
+	//st√§ng textfilen. 
 	
 //	public boolean createTextFile(){
 //		try{

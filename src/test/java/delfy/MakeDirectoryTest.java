@@ -10,49 +10,49 @@ import org.junit.Test;
 public class MakeDirectoryTest {
 	private MakeDirectory makeDirectory;
 	private String validString = "OK";
-	private String invalidString = null; 
+	private String invalidString = null;
 	private String invalidCharacterString = "~#=,?!";
 	private String testDirectoryPath = "src/test/resources/testDir/";
 	private File testDirectory = new File(testDirectoryPath);
 	private String newDirectoryName = "newDir";
 	private File newDirectory = new File(testDirectoryPath + newDirectoryName);
 
-	@Before 
+	@Before
 	public void initialize(){
-		makeDirectory = new MakeDirectory(testDirectoryPath);
+		makeDirectory = new delfy.MakeDirectory(testDirectoryPath);
 	}
 
 	@After
 	public void tearDown() {
 		newDirectory.delete();
 	}
-	
-	@Test 
+
+	@Test
 	public void testCheckUserInput(){
 		assertTrue(makeDirectory.checkUserInput(validString));
 	}
-	
-	@Test 
+
+	@Test
 	public void testInvalidInputCheckUserInput(){
 		assertFalse(makeDirectory.checkUserInput(invalidString));
 	}
-	
+
 	@Test
 	public void testIllegalCharacterInput(){
 		assertFalse(makeDirectory.checkUserInput(invalidCharacterString));
 	}
-	
-	@Test 
+
+	@Test
 	public void testContainsIllegals(){
 		assertTrue(makeDirectory.containsIllegals(invalidCharacterString));
 	}
-	
-	@Test 
+
+	@Test
 	public void testCreateDirectory(){
 		assertTrue(makeDirectory.createNewDirectory(testDirectoryPath + newDirectoryName));
 	}
-	
-	@Test 
+
+	@Test
 	public void testDirectoryAlreadyExists(){
 		assertTrue(makeDirectory.directoryAlreadyExists(testDirectory));
 	}

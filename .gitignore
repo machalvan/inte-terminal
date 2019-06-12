@@ -2,6 +2,6 @@
 /build/
 /out/
 .idea/
-.iml
+*.iml
 .gradle
 /tempTest/*

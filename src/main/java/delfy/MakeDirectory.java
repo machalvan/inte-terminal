@@ -2,7 +2,7 @@ package delfy;
 
 import java.io.File;
 
-//Ta in namnval frÂn anv‰ndare
+//Ta in namnval fr√•n anv√§ndare
 //Kontrollera namnval - check 
 //Metod som tittar om mappen redan finns - check
 //
@@ -14,7 +14,7 @@ public class MakeDirectory {
 		if (checkUserInput(directoryName)) {
 			createNewDirectory(directoryName);
 		}
-		//skriv ut till anv‰ndaren 
+		//skriv ut till anv√§ndaren 
 	}
 
 	public boolean checkUserInput(String s){

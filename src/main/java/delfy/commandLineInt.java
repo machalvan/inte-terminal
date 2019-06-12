@@ -11,9 +11,9 @@ public class commandLineInt {
 	private File workingDir;
 
 	public commandLineInt(){
-		
+
 	}
-	
+
 	//Setting up program
 	public String setWorkingDir(){
 		System.setProperty("user.dir", "/tempTest");
@@ -39,16 +39,16 @@ public class commandLineInt {
 		System.out.println("exit         Exit this program");
 		System.out.println();
 	}
-	
+
 	public void setUp(){
 		//createTempDir();
 		setWorkingDir();
 		getCurrentDir();
 		printAvailableCommands();
 		workingDir = new File(tempFileDir.testFileDir);
-		//TODO skapa en textfil för att lagra alla kommandon (för uppåtpil)
+		//TODO skapa en textfil fÃ¶r att lagra alla kommandon (fÃ¶r uppÃ¥tpil)
 	}
-	
+
 	//Running the program
 	public String readCommandText(){
 		boolean nullCheck = true;
@@ -56,7 +56,9 @@ public class commandLineInt {
 		System.out.print(workingDir.getAbsolutePath()+">");
 
 		while (nullCheck) {
-			command = keyboard.nextLine();
+			if (keyboard.hasNextLine()) {
+				command = keyboard.nextLine();
+			}
 
 			if (command != null && !command.isEmpty()) {
 				nullCheck = false;
@@ -65,11 +67,11 @@ public class commandLineInt {
 
 		return command;
 	}
-	
+
 	public void exit(){
 		System.exit(0);
 	}
-	
+
 	public void run(){
 		setUp();
 
@@ -79,7 +81,7 @@ public class commandLineInt {
 			workingDir = Command.getCommand(workingDir, commandText).execute();
 		}
 	}
-	
+
 	public static void main(String[]args){
 		commandLineInt cli = new commandLineInt();
 		cli.run();

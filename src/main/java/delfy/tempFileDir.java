@@ -6,7 +6,7 @@ import java.io.IOException;
 public class tempFileDir {
 
 	
-	//Skapar ett tempor‰rt mappsystem
+	//Skapar ett tempor√§rt mappsystem
 	public tempFileDir() {
 			 
 	}

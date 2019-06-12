@@ -39,7 +39,7 @@ public class Command {
 		return new Command(workingDir);
 	}
 	
-	//L‰gger till en str‰ng pÂ slutet av en fil, duh.
+	//L√§gger till en str√§ng p√• slutet av en fil, duh.
 	protected File addStringToFilename(File file, String toBeAddedToFile) {
 		return new File(workingDir.getAbsolutePath() + "/" + toBeAddedToFile);
 	}

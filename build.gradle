@@ -3,16 +3,21 @@ plugins {
     id 'application'
 }
 
+apply plugin: 'java'
+apply plugin: 'application'
+
+group 'test'
+version '1.0-SNAPSHOT'
+defaultTasks 'runSimple'
+
+mainClassName = 'delfy.commandLineInt'
+sourceCompatibility = 1.8
+
 jar {
     manifest {
         attributes 'Main-Class': 'delfy.commandLineInt'
     }
 }
-
-group 'test'
-version '1.0-SNAPSHOT'
-
-sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -27,16 +32,12 @@ tasks.withType(JavaCompile) {
     options.encoding = 'Cp1252'
 }
 
-apply plugin: 'java'
-
-apply plugin: 'application'
-
-mainClassName = 'delfy.commandLineInt'
-
 task(runSimple, dependsOn: 'classes', type: JavaExec) {
     main = mainClassName
     classpath = sourceSets.main.runtimeClasspath
     standardInput = System.in
 }
 
-defaultTasks 'runSimple'
+run {
+    standardInput = System.in
+}
