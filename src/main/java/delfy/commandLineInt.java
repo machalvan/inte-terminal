@@ -21,10 +21,8 @@ public class commandLineInt {
 	}
 
 	public String getCurrentDir(){
-		String curDir;
 		File path = new File(System.getProperty("user.dir"));
-		curDir = getDir.getCurrentDir(path);
-		return curDir;
+        return getDir.getCurrentDir(path);
 	}
 
 	public void createTempDir(){
@@ -35,6 +33,7 @@ public class commandLineInt {
 		System.out.println("Available commands:");
 		System.out.println("ls           List files and directories in current directory");
 		System.out.println("cd <dir>     Change directory to specified directory");
+		System.out.println("mkdir <dir>  Add specific directory");
 		System.out.println("rmdir <dir>  Remove specific directory");
 		System.out.println("exit         Exit this program");
 		System.out.println();

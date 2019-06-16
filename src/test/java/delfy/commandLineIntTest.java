@@ -3,20 +3,25 @@ package delfy;
 import static org.junit.Assert.*;
 
 import delfy.commandLineInt;
+import org.junit.Before;
 import org.junit.Test;
 
 public class commandLineIntTest {
+	private commandLineInt cli = new commandLineInt();
+	private String currentDir;
 
-	commandLineInt cli = new commandLineInt();
+	@Before
+	public void initialize() {
+		currentDir = System.getProperty("user.dir");
+	}
 
 	@Test
 	public void setDirTest() {
-		assertEquals("/tempTest",cli.setWorkingDir());
+		assertEquals("/tempTest", cli.setWorkingDir());
 	}
 
 	@Test
 	public void checkDirTest(){
-		assertEquals("/tempTest",cli.getCurrentDir());
+		assertEquals(currentDir, cli.getCurrentDir());
 	}
-
 }
