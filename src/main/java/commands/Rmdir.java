@@ -11,7 +11,7 @@ public class Rmdir extends Command {
 	}
 	
 	public File execute() {
-		File dirToBeRemoved = addStringToFilename(workingDir, data);
+		File dirToBeRemoved = addFileStringToWorkingDir(data);
 		removeDirectory(dirToBeRemoved);
 		return workingDir;
 	}

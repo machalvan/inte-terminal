@@ -6,7 +6,7 @@ import commands.Command;
 
 public class Main {
 	private Scanner keyboard = new Scanner(System.in);
-	private String testDir = System.getProperty("user.dir") + "/temp";
+	private String testDir = System.getProperty("user.dir") + "/tempTest";
 	private File workingDir;
 
 	//Setting up program

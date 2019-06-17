@@ -3,7 +3,7 @@ package commands;
 import java.io.File;
 
 public class Command {
-	File workingDir;
+	protected File workingDir;
 	
 	public Command(File workingDir) {
 		this.workingDir = workingDir;
@@ -38,10 +38,9 @@ public class Command {
 		}
 		return new Command(workingDir);
 	}
-	
-	//Lägger till en sträng på slutet av en fil, duh.
-	protected File addStringToFilename(File file, String toBeAddedToFile) {
-		return new File(workingDir.getAbsolutePath() + "/" + toBeAddedToFile);
+
+	protected File addFileStringToWorkingDir(String fileToBeAdded) {
+		return new File(workingDir.getAbsolutePath() + "/" + fileToBeAdded);
 	}
 	
 	public File execute() {

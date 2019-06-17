@@ -3,12 +3,14 @@ package delfy;
 import static org.junit.Assert.*;
 import java.io.File;
 
+import commands.Mkdir;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 public class MakeDirectoryTest {
-	private MakeDirectory makeDirectory;
+	private Mkdir mkdir;
+	//private File workingDir = new File(testDirectory)
 	private String validString = "OK";
 	private String invalidString = null;
 	private String invalidCharacterString = "~#=,?!";
@@ -19,7 +21,7 @@ public class MakeDirectoryTest {
 
 	@Before
 	public void initialize(){
-		makeDirectory = new delfy.MakeDirectory(testDirectoryPath);
+		mkdir = new Mkdir(testDirectory, testDirectoryPath);
 	}
 
 	@After
@@ -29,31 +31,31 @@ public class MakeDirectoryTest {
 
 	@Test
 	public void testCheckUserInput(){
-		assertTrue(makeDirectory.checkUserInput(validString));
+		assertTrue(mkdir.checkUserInput(validString));
 	}
 
 	@Test
 	public void testInvalidInputCheckUserInput(){
-		assertFalse(makeDirectory.checkUserInput(invalidString));
+		assertFalse(mkdir.checkUserInput(invalidString));
 	}
 
 	@Test
 	public void testIllegalCharacterInput(){
-		assertFalse(makeDirectory.checkUserInput(invalidCharacterString));
+		assertFalse(mkdir.checkUserInput(invalidCharacterString));
 	}
 
 	@Test
 	public void testContainsIllegals(){
-		assertTrue(makeDirectory.containsIllegals(invalidCharacterString));
+		assertTrue(mkdir.containsIllegals(invalidCharacterString));
 	}
 
 	@Test
 	public void testCreateDirectory(){
-		assertTrue(makeDirectory.createNewDirectory(testDirectoryPath + newDirectoryName));
+		assertTrue(mkdir.makeDirectory(new File(testDirectoryPath + newDirectoryName)));
 	}
 
 	@Test
 	public void testDirectoryAlreadyExists(){
-		assertTrue(makeDirectory.directoryAlreadyExists(testDirectory));
+		assertTrue(mkdir.directoryAlreadyExists(testDirectory));
 	}
 }

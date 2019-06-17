@@ -2,7 +2,7 @@ package commands;
 
 import java.io.File;
 
-public class Cd extends Command{
+public class Cd extends Command {
 	private String data;
 
 	public Cd(File workingDir, String data) {
@@ -11,7 +11,7 @@ public class Cd extends Command{
 	}
 
 	public File execute() {
-		File file = addStringToFilename(workingDir, data);
+		File file = addFileStringToWorkingDir(data);
 
 		if (!file.exists()) {
 			System.out.println("No such directory exists");

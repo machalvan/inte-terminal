@@ -12,14 +12,14 @@ public class Mkdir extends Command {
 
     public File execute() {
         if (checkUserInput(data)) {
-            File dirToBeMade = addStringToFilename(workingDir, data);
+            File dirToBeMade = addFileStringToWorkingDir(data);
             makeDirectory(dirToBeMade);
         }
 
         return workingDir;
     }
 
-    private boolean makeDirectory(File directory) {
+    public boolean makeDirectory(File directory) {
         if (directoryAlreadyExists(directory)) {
             return false;
         } else {
@@ -28,7 +28,7 @@ public class Mkdir extends Command {
         }
     }
 
-    private boolean checkUserInput(String s){
+    public boolean checkUserInput(String s){
         if (s == null){
             return false; //bad string
         } else {
@@ -36,12 +36,12 @@ public class Mkdir extends Command {
         }
     }
 
-    private boolean containsIllegals(String stringToBeExamined) {
+    public boolean containsIllegals(String stringToBeExamined) {
         String[] arr = stringToBeExamined.split("[~#@*+%{}<>\\[\\]|\"\\^=?!]", 2);
         return arr.length > 1;
     }
 
-    private boolean directoryAlreadyExists(File filename){
+    public boolean directoryAlreadyExists(File filename){
         return filename.isDirectory();
     }
 }
