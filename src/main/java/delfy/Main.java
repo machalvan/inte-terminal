@@ -15,8 +15,8 @@ public class Main {
 
 	public void run() {
 		System.out.println("Inside run");
-		//TestDirectory td = new TestDirectory();
-        TempFileDir td = new TempFileDir();
+		TestDirectory td = new TestDirectory();
+        //TempFileDir td = new TempFileDir();
 		td.createTempDir();
 
 		File f = td.getFileLocation();
