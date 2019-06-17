@@ -14,11 +14,6 @@ public class Main {
 		System.setProperty("user.dir", dir);
 	}
 
-	String getCurrentDir(){
-		File path = new File(System.getProperty("user.dir"));
-		return path.toString();
-	}
-
 	public void createTempDir(){
 		tempDir.createTempDir();
 	}
@@ -37,10 +32,12 @@ public class Main {
     private String readCommandText(){
 		boolean nullCheck = true;
 		String command = null;
-		System.out.print(workingDir.getAbsolutePath()+">");
+		String workingPath = workingDir.getAbsolutePath();
 
-		while (nullCheck) {
-			if (keyboard.hasNextLine()) {
+        while (nullCheck) {
+            System.out.print(workingPath + ">");
+
+            if (keyboard.hasNextLine()) {
 				command = keyboard.nextLine();
 			}
 
@@ -55,7 +52,6 @@ public class Main {
     public void setUp(){
         //createTempDir();
         setWorkingDir("\\tempTest");
-        getCurrentDir();
         printAvailableCommands();
         workingDir = new File(TempFileDir.testFileDir);
         //TODO skapa en textfil för att lagra alla kommandon (för uppåtpil)

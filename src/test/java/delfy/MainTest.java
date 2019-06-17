@@ -13,9 +13,4 @@ public class MainTest {
 	public void initialize() {
 		System.setProperty("user.dir", currentDir);
 	}
-
-	@Test
-	public void checkDirTest(){
-		assertEquals(currentDir, main.getCurrentDir());
-	}
 }
