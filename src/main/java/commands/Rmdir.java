@@ -36,12 +36,4 @@ public class Rmdir extends Command {
 		}
 		return (directory.delete());
 	}
-	
-	
-//	public static void main(String[] args) {
-//		File folder = new File("D:\\Workspace\\InteProject\\tempTest");
-//		removeDirectory(folder);
-//	}
-	
-
 }
