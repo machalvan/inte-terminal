@@ -6,7 +6,7 @@ import commands.Command;
 
 public class Main {
 	private Scanner keyboard = new Scanner(System.in);
-	private TempFileDir tempDir = new TempFileDir();
+	private String testDir = System.getProperty("user.dir") + "/temp";
 	private File workingDir;
 
 	//Setting up program
@@ -15,7 +15,7 @@ public class Main {
 	}
 
 	public void createTempDir(){
-		tempDir.createTempDir();
+        TempFileDir.createTempDir(testDir);
 	}
 
 	private void printAvailableCommands() {
@@ -53,7 +53,7 @@ public class Main {
         //createTempDir();
         setWorkingDir("\\tempTest");
         printAvailableCommands();
-        workingDir = new File(TempFileDir.testFileDir);
+        workingDir = new File(testDir);
         //TODO skapa en textfil för att lagra alla kommandon (för uppåtpil)
     }
 

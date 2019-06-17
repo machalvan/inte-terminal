@@ -6,14 +6,8 @@ import java.io.IOException;
 public class TempFileDir {
 	//Skapar ett temporärt mappsystem
 
-    static String testFileDir = System.getProperty("user.dir")+"/tempTest";
-
-	public TempFileDir() {
-
-	}
-
-	static void createTempDir() {
-		File file = new File(System.getProperty("user.dir") + "/tempTest");
+	static void createTempDir(String testFileDir) {
+		File file = new File(testFileDir);
 		String path = file.getAbsolutePath();
         file.deleteOnExit();
 
