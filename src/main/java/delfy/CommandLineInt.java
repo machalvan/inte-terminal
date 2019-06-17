@@ -7,7 +7,6 @@ import commands.Command;
 public class CommandLineInt {
 	private Scanner keyboard = new Scanner(System.in);
 	private TempFileDir tempDir = new TempFileDir();
-	private ShowDir getDir = new ShowDir();
 	private File workingDir;
 
 	public CommandLineInt(){
@@ -22,7 +21,7 @@ public class CommandLineInt {
 
 	public String getCurrentDir(){
 		File path = new File(System.getProperty("user.dir"));
-        return getDir.getCurrentDir(path);
+		return path.toString();
 	}
 
 	public void createTempDir(){
