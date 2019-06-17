@@ -13,4 +13,5 @@ public class MainTest {
 	public void initialize() {
 		System.setProperty("user.dir", currentDir);
 	}
+
 }

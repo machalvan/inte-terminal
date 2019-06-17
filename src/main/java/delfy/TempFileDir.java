@@ -5,37 +5,23 @@ import java.io.IOException;
 
 public class TempFileDir {
 	//Skapar ett temporärt mappsystem
+
+    static String testFileDir = System.getProperty("user.dir")+"/tempTest";
+
 	public TempFileDir() {
 
 	}
 
-	static String testFileDir = System.getProperty("user.dir")+"/tempTest";
 	static void createTempDir() {
-		File f = new File(System.getProperty("user.dir")+"/tempTest");
-		try {
-			createTempFile(3, f);
-				createTempFile (2, new File(f.getAbsolutePath()+"/folder1"));
-				f.deleteOnExit();
-				createTempFile (1, new File(f.getAbsolutePath()+"/folder1/folder2"));
-				f.deleteOnExit();
-				createTempFile (3, new File(f.getAbsolutePath()+"/folder3"));
-				f.deleteOnExit();
-		}
-		catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+		File file = new File(System.getProperty("user.dir") + "/tempTest");
+		String path = file.getAbsolutePath();
+        file.deleteOnExit();
 
-	public static void createTempDir(File path) {
-		File f = new File(path+"/tempTest");
 		try {
-			createTempFile(3, f);
-				createTempFile (2, new File(f.getAbsolutePath()+"/folder1"));
-				f.deleteOnExit();
-				createTempFile (1, new File(f.getAbsolutePath()+"/folder1/folder2"));
-				f.deleteOnExit();
-				createTempFile (3, new File(f.getAbsolutePath()+"/folder3"));
-				f.deleteOnExit();
+			createTempFile(3, file);
+            createTempFile (2, new File(path + "/folder1"));
+            createTempFile (1, new File(path + "/folder1/folder2"));
+            createTempFile (3, new File(path + "/folder3"));
 		}
 		catch (IOException e) {
 			e.printStackTrace();
@@ -46,8 +32,10 @@ public class TempFileDir {
 		if (!path.exists()) {
 			path.mkdir();
 		}
+
 		for (int i = 1; i <= numberOfFiles; i++) {
-			File.createTempFile("testFile"+i, ".test", path);
+			File f = File.createTempFile("testFile" + i, ".test", path);
+            f.deleteOnExit();
 		}
 	}
 }
