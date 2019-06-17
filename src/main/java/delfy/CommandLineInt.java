@@ -15,7 +15,7 @@ public class CommandLineInt {
 
 	//Setting up program
 	public String setWorkingDir(){
-		System.setProperty("user.dir", "/tempTest");
+		System.setProperty("user.dir", "\\tempTest");
 		return System.getProperty("user.dir");
 	}
 

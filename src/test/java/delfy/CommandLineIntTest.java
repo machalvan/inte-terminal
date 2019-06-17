@@ -7,16 +7,16 @@ import org.junit.Test;
 
 public class CommandLineIntTest {
 	private CommandLineInt cli = new CommandLineInt();
-	private String currentDir;
+	private String currentDir = "\\tempTest";
 
 	@Before
 	public void initialize() {
-		currentDir = System.getProperty("user.dir");
+		//currentDir = System.getProperty("user.dir");
 	}
 
 	@Test
 	public void setWorkingDirTest() {
-		assertEquals("/tempTest", cli.setWorkingDir());
+		assertEquals(currentDir, cli.setWorkingDir());
 	}
 
 	@Test
