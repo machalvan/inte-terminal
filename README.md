@@ -7,14 +7,22 @@ learning integration and unit testing. Also for learning some version control.
 ## How to run
 
 ### Linux
-`./gradlew --console plain run`
+```
+./gradlew run
+```
+or
+```
+./gradlew jar
+java -jar build/libs/inte-terminal-1.0-SNAPSHOT.jar
+```
 
 ### Windows
-`gradlew --console plain run`
-
-### JAR
 ```
-gradle jar
+gradlew run
+```
+or
+```
+gradlew jar
 java -jar build\libs\inte-terminal-1.0-SNAPSHOT.jar
 ```
 
