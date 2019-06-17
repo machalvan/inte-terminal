@@ -5,8 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class CommandLineIntTest {
-	private CommandLineInt cli = new CommandLineInt();
+public class MainTest {
+	private Main main = new Main();
 	private String currentDir = "\\tempTest";
 
 	@Before
@@ -16,6 +16,6 @@ public class CommandLineIntTest {
 
 	@Test
 	public void checkDirTest(){
-		assertEquals(currentDir, cli.getCurrentDir());
+		assertEquals(currentDir, main.getCurrentDir());
 	}
 }

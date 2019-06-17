@@ -4,21 +4,17 @@ import java.io.File;
 import java.util.Scanner;
 import commands.Command;
 
-public class CommandLineInt {
+public class Main {
 	private Scanner keyboard = new Scanner(System.in);
 	private TempFileDir tempDir = new TempFileDir();
 	private File workingDir;
 
-	public CommandLineInt(){
-
-	}
-
 	//Setting up program
-	public void setWorkingDir(String dir){
+    private void setWorkingDir(String dir){
 		System.setProperty("user.dir", dir);
 	}
 
-	public String getCurrentDir(){
+	String getCurrentDir(){
 		File path = new File(System.getProperty("user.dir"));
 		return path.toString();
 	}
@@ -37,17 +33,8 @@ public class CommandLineInt {
 		System.out.println();
 	}
 
-	public void setUp(){
-		//createTempDir();
-		setWorkingDir("\\tempTest");
-		getCurrentDir();
-		printAvailableCommands();
-		workingDir = new File(TempFileDir.testFileDir);
-		//TODO skapa en textfil för att lagra alla kommandon (för uppåtpil)
-	}
-
 	//Running the program
-	public String readCommandText(){
+    private String readCommandText(){
 		boolean nullCheck = true;
 		String command = null;
 		System.out.print(workingDir.getAbsolutePath()+">");
@@ -65,22 +52,26 @@ public class CommandLineInt {
 		return command;
 	}
 
-	public void exit(){
-		System.exit(0);
-	}
+    public void setUp(){
+        //createTempDir();
+        setWorkingDir("\\tempTest");
+        getCurrentDir();
+        printAvailableCommands();
+        workingDir = new File(TempFileDir.testFileDir);
+        //TODO skapa en textfil för att lagra alla kommandon (för uppåtpil)
+    }
 
-	public void run(){
+	private void run(){
 		setUp();
 
-		while(true){
+		while (true) {
 			String commandText = readCommandText();
-			//handleCommand(command);
 			workingDir = Command.getCommand(workingDir, commandText).execute();
 		}
 	}
 
 	public static void main(String[]args){
-		CommandLineInt cli = new CommandLineInt();
-		cli.run();
+		Main main = new Main();
+		main.run();
 	}
 }
