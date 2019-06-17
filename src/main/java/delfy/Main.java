@@ -4,35 +4,35 @@ import java.io.File;
 
 
 public class Main {
-
 	public Main() {
 		System.out.println("Inside main");
 	}
-	
+
 	public static void main(String[] args) {
 		Main main = new Main();
 		main.run();
 	}
-	
+
 	public void run() {
 		System.out.println("Inside run");
-		TestDirectory td = new TestDirectory();
+		//TestDirectory td = new TestDirectory();
+        TempFileDir td = new TempFileDir();
 		td.createTempDir();
-		
+
 		File f = td.getFileLocation();
-		
-		printDir(f); //print to System.out 
-		
+
+		printDir(f); //print to System.out
+
 		f = cd(f, "folder1");
-		
+
 		System.out.println("\n \n");
 		printDir(f);
 	}
-	
+
 	/*
 	 * Grundkommandon
 	 */
-	
+
 	//LS-kommando
 	File[] ls(File dir) {
 		return dir.listFiles();
@@ -41,15 +41,15 @@ public class Main {
 	File cd (File currDir, String jump) {
 		return new File(currDir.getAbsolutePath() + "/" + jump);
 	}
-	
+
 	//Mkdir
 	MakeDirectory mkdir = new MakeDirectory("aTest");
-	
+
 	/*
 	 * F�rl�ngningar av kommandon
 	 */
 	//Printdir
-	
+
 	void printDir(File f) {
 		for (int i = 0; i < ls(f).length; i++) {
 			System.out.println(ls(f)[i].getName());

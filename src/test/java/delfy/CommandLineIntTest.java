@@ -15,7 +15,7 @@ public class CommandLineIntTest {
 	}
 
 	@Test
-	public void setDirTest() {
+	public void setWorkingDirTest() {
 		assertEquals("/tempTest", cli.setWorkingDir());
 	}
 

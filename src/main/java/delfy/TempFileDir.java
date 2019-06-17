@@ -4,14 +4,13 @@ import java.io.File;
 import java.io.IOException;
 
 public class TempFileDir {
-
-
 	//Skapar ett temporärt mappsystem
 	public TempFileDir() {
 
 	}
-	public static String testFileDir = System.getProperty("user.dir")+"/tempTest";
-	public static void createTempDir() {
+
+	static String testFileDir = System.getProperty("user.dir")+"/tempTest";
+	static void createTempDir() {
 		File f = new File(System.getProperty("user.dir")+"/tempTest");
 		try {
 			createTempFile(3, f);
@@ -26,6 +25,7 @@ public class TempFileDir {
 			e.printStackTrace();
 		}
 	}
+
 	public static void createTempDir(File path) {
 		File f = new File(path+"/tempTest");
 		try {
@@ -42,10 +42,7 @@ public class TempFileDir {
 		}
 	}
 
-
-
-	private static void createTempFile(int numberOfFiles, File path) throws IOException
-	{
+	private static void createTempFile(int numberOfFiles, File path) throws IOException {
 		if (!path.exists()) {
 			path.mkdir();
 		}
@@ -53,6 +50,4 @@ public class TempFileDir {
 			File.createTempFile("testFile"+i, ".test", path);
 		}
 	}
-
-
 }
