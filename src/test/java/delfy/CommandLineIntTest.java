@@ -11,12 +11,7 @@ public class CommandLineIntTest {
 
 	@Before
 	public void initialize() {
-		//currentDir = System.getProperty("user.dir");
-	}
-
-	@Test
-	public void setWorkingDirTest() {
-		assertEquals(currentDir, cli.setWorkingDir());
+		System.setProperty("user.dir", currentDir);
 	}
 
 	@Test

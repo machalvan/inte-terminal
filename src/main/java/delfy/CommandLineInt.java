@@ -14,9 +14,8 @@ public class CommandLineInt {
 	}
 
 	//Setting up program
-	public String setWorkingDir(){
-		System.setProperty("user.dir", "\\tempTest");
-		return System.getProperty("user.dir");
+	public void setWorkingDir(String dir){
+		System.setProperty("user.dir", dir);
 	}
 
 	public String getCurrentDir(){
@@ -40,7 +39,7 @@ public class CommandLineInt {
 
 	public void setUp(){
 		//createTempDir();
-		setWorkingDir();
+		setWorkingDir("\\tempTest");
 		getCurrentDir();
 		printAvailableCommands();
 		workingDir = new File(TempFileDir.testFileDir);
