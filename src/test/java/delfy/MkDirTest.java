@@ -8,7 +8,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MakeDirectoryTest {
+public class MkDirTest {
 	private Mkdir mkdir;
 	//private File workingDir = new File(testDirectory)
 	private String validString = "OK";
