@@ -2,12 +2,11 @@ package delfy;
 
 import static org.junit.Assert.*;
 
-import delfy.commandLineInt;
 import org.junit.Before;
 import org.junit.Test;
 
-public class commandLineIntTest {
-	private commandLineInt cli = new commandLineInt();
+public class CommandLineIntTest {
+	private CommandLineInt cli = new CommandLineInt();
 	private String currentDir;
 
 	@Before

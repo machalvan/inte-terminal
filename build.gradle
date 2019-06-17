@@ -10,12 +10,12 @@ group 'test'
 version '1.0-SNAPSHOT'
 defaultTasks 'runSimple'
 
-mainClassName = 'delfy.commandLineInt'
+mainClassName = 'delfy.CommandLineInt'
 sourceCompatibility = 1.8
 
 jar {
     manifest {
-        attributes 'Main-Class': 'delfy.commandLineInt'
+        attributes 'Main-Class': 'delfy.CommandLineInt'
     }
 }
 

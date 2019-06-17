@@ -1,11 +1,16 @@
+package delfy;
+
 import java.io.File;
 import java.io.IOException;
 
-public class fileSystemTest {
+public class TempFileDir {
 
-	public fileSystemTest() {
-			 
+
+	//Skapar ett temporärt mappsystem
+	public TempFileDir() {
+
 	}
+	public static String testFileDir = System.getProperty("user.dir")+"/tempTest";
 	public static void createTempDir() {
 		File f = new File(System.getProperty("user.dir")+"/tempTest");
 		try {
@@ -16,7 +21,7 @@ public class fileSystemTest {
 				f.deleteOnExit();
 				createTempFile (3, new File(f.getAbsolutePath()+"/folder3"));
 				f.deleteOnExit();
-		} 
+		}
 		catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -31,23 +36,23 @@ public class fileSystemTest {
 				f.deleteOnExit();
 				createTempFile (3, new File(f.getAbsolutePath()+"/folder3"));
 				f.deleteOnExit();
-		} 
+		}
 		catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-	
-	
-	
-	private static void createTempFile(int numberOfFiles, File path) throws IOException 
+
+
+
+	private static void createTempFile(int numberOfFiles, File path) throws IOException
 	{
 		if (!path.exists()) {
-			System.out.println(path.mkdir());
+			path.mkdir();
 		}
 		for (int i = 1; i <= numberOfFiles; i++) {
 			File.createTempFile("testFile"+i, ".test", path);
 		}
 	}
-	
+
 
 }

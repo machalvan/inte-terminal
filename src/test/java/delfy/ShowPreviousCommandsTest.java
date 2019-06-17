@@ -2,18 +2,16 @@ package test.java.delfy;
 
 
 
-import static org.junit.Assert.*;
-
-
+import delfy.ShowPreviousCommands;
 import org.junit.Before;
 import org.junit.Test;
 
-public class showPreviousCommandsTest {
-	delfy.showPreviousCommands sPC;
+public class ShowPreviousCommandsTest {
+	ShowPreviousCommands sPC;
 
 	@Before
 	public void initialize(){
-		sPC = new delfy.showPreviousCommands();
+		sPC = new ShowPreviousCommands();
 	}
 
 	@Test

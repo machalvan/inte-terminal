@@ -4,13 +4,13 @@ import java.io.File;
 import java.util.Scanner;
 import commands.Command;
 
-public class commandLineInt {
+public class CommandLineInt {
 	private Scanner keyboard = new Scanner(System.in);
-	private tempFileDir tempDir = new tempFileDir();
-	private showDir getDir = new showDir();
+	private TempFileDir tempDir = new TempFileDir();
+	private ShowDir getDir = new ShowDir();
 	private File workingDir;
 
-	public commandLineInt(){
+	public CommandLineInt(){
 
 	}
 
@@ -44,7 +44,7 @@ public class commandLineInt {
 		setWorkingDir();
 		getCurrentDir();
 		printAvailableCommands();
-		workingDir = new File(tempFileDir.testFileDir);
+		workingDir = new File(TempFileDir.testFileDir);
 		//TODO skapa en textfil för att lagra alla kommandon (för uppåtpil)
 	}
 
@@ -82,7 +82,7 @@ public class commandLineInt {
 	}
 
 	public static void main(String[]args){
-		commandLineInt cli = new commandLineInt();
+		CommandLineInt cli = new CommandLineInt();
 		cli.run();
 	}
 }

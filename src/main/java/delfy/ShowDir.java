@@ -2,18 +2,18 @@ package delfy;
 
 import java.io.File;
 
-public class showDir {
-	
+public class ShowDir {
+
 	private String currentDir = "";
-	
-	public showDir(){
-		
+
+	public ShowDir(){
+
 	}
 
 	public String getCurrentDir(File path){
 		currentDir = path.toString();
 		return currentDir;
 	}
-	
-	
+
+
 }
