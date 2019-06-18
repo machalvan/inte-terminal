@@ -50,7 +50,10 @@ public class Main {
 	}
 
     public void setUp(){
-        //createTempDir();
+        File f = new File(testDir);
+    	if(!f.exists()) {
+			createTempDir();
+		}
         setWorkingDir("\\tempTest");
         printAvailableCommands();
         workingDir = new File(testDir);

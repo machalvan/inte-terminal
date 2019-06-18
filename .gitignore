@@ -4,4 +4,4 @@
 .idea/
 *.iml
 .gradle
-/tempTest/*
+/tempTest
