@@ -8,25 +8,15 @@ learning integration and unit testing. Also for learning some version control.
 
 ### Linux
 ```
-./gradlew run
-```
-or
-```
-./gradlew jar
-java -jar build/libs/inte-terminal-1.0-SNAPSHOT.jar
+./gradlew
 ```
 
 ### Windows
 ```
-gradlew run
-```
-or
-```
-gradlew jar
-java -jar build\libs\inte-terminal-1.0-SNAPSHOT.jar
+gradlew
 ```
 
-## Commands
+## Terminal commands
 | Command | Description |
 | :--- | :--- | 
 | ls | List files and directories in current directory |

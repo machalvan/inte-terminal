@@ -8,16 +8,10 @@ apply plugin: 'application'
 
 group 'test'
 version '1.0-SNAPSHOT'
-defaultTasks 'runSimple'
+defaultTasks 'run'
 
 mainClassName = 'delfy.Main'
 sourceCompatibility = 1.8
-
-jar {
-    manifest {
-        attributes 'Main-Class': 'delfy.Main'
-    }
-}
 
 repositories {
     mavenCentral()
@@ -31,13 +25,7 @@ dependencies {
 tasks.withType(JavaCompile) {
     options.encoding = 'Cp1252'
 }
-/*
-task(runSimple, dependsOn: 'classes', type: JavaExec) {
-    main = mainClassName
-    classpath = sourceSets.main.runtimeClasspath
-    standardInput = System.in
-}
-*/
+
 run {
     standardInput = System.in
 }
