@@ -5,7 +5,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
-import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
@@ -24,8 +23,9 @@ public class CdTest {
     public void previousDirCdTest() {
         String cdCommand = "..";
         String workingDirectory = System.getProperty("user.dir");
-        String targetDirectory = workingDirectory + "\\" + "src\\test\\resources\\";
+        String targetDirectory = workingDirectory + "\\" + "src\\test\\resources";
+        File file = new File(targetDirectory);
         cd = new Cd(workingDirTest, cdCommand);
-        assertEquals(targetDirectory, cd.execute());
+        assertEquals(file, cd.execute());
     }
 }
