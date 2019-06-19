@@ -5,14 +5,13 @@ import java.util.Scanner;
 import commands.Command;
 
 public class Main {
-	private Scanner keyboard;
+	private Scanner keyboard = new Scanner(System.in);
 	private String testDir = System.getProperty("user.dir") + "/tempTest";
 	private File workingDir;
 
 	//Setting up program
     public void setWorkingDir(String dir){
-		workingDir = new File(testDir);
-    	System.setProperty("user.dir", dir);
+		System.setProperty("user.dir", dir);
 	}
 
 	public void createTempDir(){
@@ -31,14 +30,14 @@ public class Main {
 
 	//Running the program
     public String readCommandText(){
-		keyboard = new Scanner(System.in);
-		String workingPath = workingDir.getAbsolutePath();
 		boolean nullCheck = true;
-		String command = "";
+		String command = null;
+		String workingPath = workingDir.getAbsolutePath();
 
-		while(nullCheck) {
-			System.out.print(workingPath + ">");
-			if(keyboard.hasNextLine()) {
+        while (nullCheck) {
+            System.out.print(workingPath + ">");
+
+            if (keyboard.hasNextLine()) {
 				command = keyboard.nextLine();
 			}
 
@@ -46,6 +45,7 @@ public class Main {
 				nullCheck = false;
 			}
 		}
+
 		return command;
 	}
 
@@ -57,9 +57,13 @@ public class Main {
 	}
 
     public void setUp(){
-        createTempDir();
+        File f = new File(testDir);
+    	if(!f.exists()) {
+			createTempDir();
+		}
         setWorkingDir("\\tempTest");
         printAvailableCommands();
+        workingDir = new File(testDir);
         //TODO skapa en textfil för att lagra alla kommandon (för uppåtpil)
     }
 
