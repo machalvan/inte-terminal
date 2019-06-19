@@ -10,7 +10,7 @@ public class Main {
 	private File workingDir;
 
 	//Setting up program
-    private void setWorkingDir(String dir){
+    public void setWorkingDir(String dir){
 		System.setProperty("user.dir", dir);
 	}
 
@@ -29,7 +29,7 @@ public class Main {
 	}
 
 	//Running the program
-    private String readCommandText(){
+    public String readCommandText(){
 		boolean nullCheck = true;
 		String command = null;
 		String workingPath = workingDir.getAbsolutePath();
@@ -47,6 +47,13 @@ public class Main {
 		}
 
 		return command;
+	}
+
+	public String commandInput() {
+		Scanner keyboard = new Scanner(System.in);
+		String command = keyboard.nextLine();
+
+    	return command;
 	}
 
     public void setUp(){
