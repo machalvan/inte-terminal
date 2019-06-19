@@ -32,6 +32,6 @@ run {
 
 test {
     afterTest { desc, result ->
-        logger.quiet "Executing test ${desc.name} [${desc.className}] with result: ${result.resultType}"
+        logger.quiet "${result.resultType}: ${desc.name} [${desc.className}]"
     }
 }

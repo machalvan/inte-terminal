@@ -4,9 +4,12 @@
 This program is a simple terminal built as a part of a school group assignment for 
 learning integration and unit testing. Also for learning some version control.
 
+This terminal is built with Windows file system in mind and might not work perfectly
+on Linux/Mac.
+
 ## How to run
 
-### Linux/MAC
+### Linux/Mac
 ```
 ./gradlew run
 ```
@@ -18,7 +21,7 @@ gradlew run
 
 ## How to test
 
-### Linux/MAC
+### Linux/Mac
 ```
 ./gradlew test
 ```
