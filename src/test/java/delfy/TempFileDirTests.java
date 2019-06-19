@@ -5,15 +5,15 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
 
 import static org.junit.Assert.*;
 
 public class TempFileDirTests {
     private File testDir;
     private String testDirPath;
-    private TempFileDir tempFileDir;
-    private File createdTestDir;
 
     public void fileRemoval(File testDir) {
         File[] contents = testDir.listFiles();
@@ -27,7 +27,11 @@ public class TempFileDirTests {
                 }
             }
         }
-        testDir.delete();
+        try {
+            testDir.delete();
+        } catch(SecurityException e) {
+            e.printStackTrace();
+        }
     }
 
     @Before
@@ -39,13 +43,13 @@ public class TempFileDirTests {
 
     @Test
     public void fileExistBeforeTest() {
-        assertEquals(false, testDir.exists());
+        assertFalse(testDir.exists());
     }
 
     @Test
     public void createTempDirTest() {
-        tempFileDir = new TempFileDir();
-        tempFileDir.createTempDir(testDirPath);
+        File createdTestDir;
+        TempFileDir.createTempDir(testDirPath);
         createdTestDir = new File(System.getProperty("user.dir") + "/tempTest" + "/folder1");
         assertTrue(createdTestDir.exists());
         createdTestDir = new File(System.getProperty("user.dir") + "/tempTest" + "/folder1" + "/folder2");
