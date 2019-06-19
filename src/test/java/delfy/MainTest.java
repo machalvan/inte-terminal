@@ -11,11 +11,12 @@ import java.io.InputStream;
 
 public class MainTest {
 	private Main main;
-	private String currentDir = "\\tempTest";
+	private String currentDir = "/tempTest";
 
 	@Before
 	public void initialize() {
-		System.setProperty("user.dir", currentDir);
+
+		//System.setProperty("user.dir", currentDir);
 	}
 
 	@Test
