@@ -6,14 +6,26 @@ learning integration and unit testing. Also for learning some version control.
 
 ## How to run
 
-### Linux
+### Linux/MAC
 ```
-./gradlew
+./gradlew run
 ```
 
 ### Windows
 ```
-gradlew
+gradlew run
+```
+
+## How to test
+
+### Linux/MAC
+```
+./gradlew test
+```
+
+### Windows
+```
+gradlew test
 ```
 
 ## Terminal commands
